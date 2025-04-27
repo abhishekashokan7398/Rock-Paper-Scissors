@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="./assets/icon.jpg">
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+  <audio id="myAudio" autoplay>
+    <source src="assets/Winning Tone BGM Ta Daa.mp3" type="audio/mpeg">
+  </audio>
+    <div  class ="Group">
+        <img src="assets/Group 5.png" alt="">
+    </div>
+    <div class ="vector">
+        <img src="assets/Vector.png" alt="">
+    </div>
+    <h1>HORRAY!!</h1>
+   <p> <H3> YOU WON THE GAME</H3></p>
+
+   <div class="rules-popup" id="rulesPopup">
+    <button class="close-btn" onclick="toggleRules()">✖</button>
+    <h3>Game Rules</h3>
+    <ul>
+      <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+      <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+      <li>If both players choose the same hand, play again!</li>
+    </ul>
+  </div>
+
+  <button class="rules-btn" onclick="toggleRules()">RULES</button>
+
+
+<div class ="playagain">
+  <a href="index.html">  <button>PLAY AGAIN</button></a>
+</div>
+
+<script src="script.js"></script>
+<script>
+  window.addEventListener('load', () => {
+    const audio = document.getElementById('myAudio');
+    
+    //  play audio on load
+    audio.play().catch(error => {
+      console.log('Autoplay failed. Browser might require user interaction.', error);
+    });
+  });
+</script>
+</body>
+
+
+</html>

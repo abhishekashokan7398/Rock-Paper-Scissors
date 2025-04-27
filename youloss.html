@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="./assets/icon.jpg">
+    <link rel="stylesheet" href="youloss.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+           
+            <div class="header">
+             <h1 style="color:whitesmoke; margin-left: 10px; ">ROCK<br>PAPER<br>SCISSORS</h1>
+           <div class="scoreboard">
+            <div class="score">
+                <h4 style="">COMPUTER <br> <span>SCORE</span></h4>
+                <p style="text-align: center; margin-top: -10px;"id=computer-score>0</p>
+                
+            </div>
+            <div class="score1">
+                <h4 style="margin-left: 18px;">YOUR <br> <span>SCORE</span></h4>
+                <p style="text-align: center; margin-top: -10px;"id=player-score>0</p>
+            </div>
+           </div>
+             </div>
+            </div>
+        </header>
+
+        <div class="result-section">
+            <div class="picks-container">
+              <div class="pick">
+                <p class="label">YOU PICKED</p>
+                <div class="ring ring5"></div>
+                <div class="ring ring6"></div>
+                <div class="ring ring7"></div>
+                <div class="circle orange">
+                  <img id="player-choice-img" src="" alt="Your choice">
+                </div>
+              </div>
+             
+         
+
+
+              <div class="container1">
+                <p class="label">PC PICKED</p>
+                <div class="ring ring1"></div>
+                <div class="ring ring2"></div>
+                <div class="ring ring3"></div>
+              
+                <div class="center-circle">
+                  <img id="computer-choice-img" src="" alt="Computer choice">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        <div class="lossmessage">
+            <h1>YOU LOST</h1>
+            <h2>AGAINST PC</h2>
+            <div class ="playagain">
+              <a href="index.html">  <button>PLAY AGAIN</button></a>
+            </div>
+        </div>
+
+        <div class="rules-popup" id="rulesPopup">
+            <button class="close-btn" onclick="toggleRules()">✖</button>
+            <h3>Game Rules</h3>
+            <ul>
+              <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+              <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+              <li>If both players choose the same hand, play again!</li>
+            </ul>
+          </div>
+      
+        <button class="rules-btn" onclick="toggleRules()">RULES</button>
+        <script src="script.js"></script>   
+</body>
+
+
+
+
+</html>

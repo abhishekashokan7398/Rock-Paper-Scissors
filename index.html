@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="./assets/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+    <div class="container">
+       
+        <div class="header">
+         <h1 style="color:whitesmoke; margin-left: 10px; ">ROCK<br>PAPER<br>SCISSORS</h1>
+       <div class="scoreboard">
+        <div class="score">
+            <h4 style="margin-left: 18px;" >COMPUTER <br> <span>SCORE</span></h4>
+            <p style="text-align: center; margin-top: -10px;"id=computer-score>0</p>
+            
+        </div>
+        <div class="score1">
+            <h4 style="margin-left: 18px;" >YOUR <br> <span>SCORE</span></h4>
+            <p style="text-align: center; margin-top: -10px;"id=player-score>0</p>
+        </div>
+       </div>
+         </div>
+        </div>
+    </header>
+    
+    <div class="body">
+        <div class="rock"  onclick="play('rock')" id="rock">
+            <div class="white" >
+             <img src="./assets/hand1.png" alt="" class="img1">
+            </div>
+        </div>
+
+        <div class="first_line"></div>
+        <div class="Second_line"></div>
+        <div class="third_line"></div>
+        
+        <div class="ones" ></div>
+
+        <div class="paper"onclick="play('paper')">
+            <div class="white">
+                <img src="./assets/hand2.png" alt="" class="img2" >
+            </div>  
+            
+        </div>
+       
+        <div class="scissor" onclick="play('scissors')">
+            <div class="white"style="text-align: center;">
+                <img src="./assets/hand3.png" alt="" class="img3" >
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="rules-popup" id="rulesPopup">
+        <button class="close-btn" onclick="toggleRules()">✖</button>
+        <h3>Game Rules</h3>
+        <ul>
+          <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+          <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+          <li>If both players choose the same hand, play again!</li>
+        </ul>
+      </div>
+  
+    
+      <div class="game-controls">
+        <button class="rules-btn" onclick="toggleRules()">RULES</button>
+        <button class="reset-btn" onclick="resetScores()">RESET SCORES</button>
+    </div>
+  
+    </div>
+    
+ 
+      <script src="script.js"></script>
+</body> 
+
+  
+</html>
